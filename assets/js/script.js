@@ -183,29 +183,10 @@ document.addEventListener('DOMContentLoaded', () => {
             projectsGrid.appendChild(card);
         });
     }
-    const contactForm = document.getElementById('contact-form');
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        // Validation Logic (Simulated)
-        const name = document.getElementById('name').value;
-        const btn = contactForm.querySelector('button');
-        const originalText = btn.innerText;
-
-        btn.innerText = 'Sending...';
-
-        setTimeout(() => {
-            btn.innerText = 'Message Sent!';
-            btn.style.color = 'var(--navy)';
-            btn.style.backgroundColor = 'var(--green)';
-            contactForm.reset();
-
-            setTimeout(() => {
-                btn.innerText = originalText;
-                btn.style.color = 'var(--green)';
-                btn.style.backgroundColor = 'transparent';
-            }, 3000);
-        }, 1500);
-    });
+    // const contactForm = document.getElementById('contact-form');
+    // contactForm.addEventListener('submit', (e) => {
+    //     // Allow default form submission to Formspree
+    // });
 
     // --- Canvas Particles ---
     // --- Financial Growth Background Animation ---
